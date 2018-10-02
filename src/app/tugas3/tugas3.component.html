@@ -1,0 +1,12 @@
+<p>
+  <button class="btn btn-primary" 
+  (click)=" onCreationStatus()"
+  >tampilkan detail</button>
+  
+ <br> {{kampus}}
+</p>
+<p *ngFor="let poltek of arraykampus"
+[ngStyle]="{backgroundColor: poltek >4 ? 'blue':'white'}"
+[ngClass]="{online: poltek >4  }"
+
+>{{poltek}}</p>
